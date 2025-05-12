@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: task-manager-backend
+    env: node
+    buildCommand: npm install
+    startCommand: node index.js
+    plan: free
+    branches:
+      - main
